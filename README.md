@@ -1,11 +1,11 @@
 ### 使用docker-compose 构建kafka，并使用springboot demo完成测试
-1. 启动 `docker-compose up -d`
+#### 1. 启动 `docker-compose up -d`
    ![img_8.png](img_8.png)
-2. 开启管理控制台 http://localhost:9000/
+#### 2. 开启管理控制台 http://localhost:9000/
 - 新增kafka
   ![img.png](img.png)
   ![img_1.png](img_1.png)
-3. 进入容器创建topic并测试
+#### 3. 进入容器创建topic并测试
 - 创建一个消费topic
 
 `kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 4`
