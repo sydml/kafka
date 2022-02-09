@@ -13,6 +13,6 @@ public class MsgConsumer {
 
     @KafkaListener(topics = "test-topic", containerFactory = "kafkaListenerContainerFactory")
     public void processMsg(ConsumerRecord<?, ?> record) {
-        logger.info("消费者开始消费 {}|{}|{}|{}", record.topic(), record.partition(), record.offset(), record.value());
+        logger.info("消费者开始消费 topic {} partition {} offset {} message {}", record.topic(), record.partition(), record.offset(), record.value());
     }
 }
