@@ -1,4 +1,4 @@
-### 使用docker-compose 构建kafka
+### 使用docker-compose 构建kafka，并使用springboot demo完成测试
 1. 启动 `docker-compose up -d`
 2. 开启管理控制台 http://localhost:9000/
 - 新增kafka
