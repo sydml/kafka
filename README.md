@@ -31,5 +31,5 @@
 ![img_7.png](img_7.png)
 
 **参考**：
-https://www.lixueduan.com/post/kafka/01-install/
-https://juejin.cn/post/7023586768368697375
+- https://www.lixueduan.com/post/kafka/01-install/
+- https://juejin.cn/post/7023586768368697375
