@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class MsgConsumer {
    private static final Logger logger = LoggerFactory.getLogger(MsgConsumer.class);
 
-    @KafkaListener(topics = "test-topic", containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "test", containerFactory = "kafkaListenerContainerFactory")
     public void processMsg(ConsumerRecord<?, ?> record) {
         logger.info("消费者开始消费 topic {} partition {} offset {} message {}", record.topic(), record.partition(), record.offset(), record.value());
     }

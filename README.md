@@ -1,4 +1,7 @@
-### 使用docker-compose 构建kafka，并使用springboot demo完成测试
+# docker：kafka单机及集群搭建及测试
+**测试环境 macbook pro m1**
+## 一、kafka单机版本
+- 文件位置/src/main/resource/docker/docker-compose.yaml,使用是将ip换成本机的ip
 #### 1. 启动 `docker-compose up -d`
    ![img_8.png](img_8.png)
 #### 2. 开启管理控制台 http://localhost:9000/
@@ -29,3 +32,16 @@
 **参考**：
 - https://www.lixueduan.com/post/kafka/01-install/
 - https://juejin.cn/post/7023586768368697375
+## 二、集群搭建
+### 2.1 文件位置/src/main/resource/docker/docker-compose.yaml,使用是将ip换成本机的ip
+#### 2.1.1 启动命令同上
+![img_9.png](img_9.png)
+![img_10.png](img_10.png)
+### 2.2 修改代码
+com.sydml.kafka.config.KafkaConsumerConfig
+com.sydml.kafka.config.KafkaProducerConfig
+![img_11.png](img_11.png)
+### 2.2.1 启动后验证
+![img_12.png](img_12.png)
+![img_13.png](img_13.png)
+![img_14.png](img_14.png)
